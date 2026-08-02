@@ -10,9 +10,9 @@ const Header = () =>{
        dispatch(toggleMenu());
     }
     return(
-        <div onClick ={()=>handleToggleSidebar()}className="grid grid-flow-col p-2 m-2 cursor-pointer shadow-lg">
+        <div className="grid grid-flow-col p-2 m-2 cursor-pointer shadow-lg">
             <div className="flex col-span-1 justify-center">
-            <img className="h-10"
+            <img  onClick ={()=>handleToggleSidebar()} className="h-10"
             alt="menu" src={menuIcon}/>
 
             <img className="h-20 mx-2"
